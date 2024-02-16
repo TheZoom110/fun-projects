@@ -18,6 +18,9 @@
 #define choto_hoy <
 #define er_theke 
 #define na !
+#define ebong &&
+#define kinba ||
+#define eta_ba_ota ^
 #define thik true
 #define bhul false
 #define firiye_de return
