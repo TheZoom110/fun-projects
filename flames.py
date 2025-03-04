@@ -1,3 +1,6 @@
+# Function copied to https://gist.github.com/TheZoom110/2fbb7cd2cf21c3e71051d9e83835769c
+# Comments about the code included there
+
 def flames(name1: str, name2: str) -> str:
     a = list(name1.upper())
     b = list(name2.upper())
