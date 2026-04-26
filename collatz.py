@@ -171,7 +171,7 @@ def print_report(counts, counterexamples, start, end):
 import time
 
 START = 2
-END   = 100_000_000    # Change to 100_000_000 for 10^8, etc.
+END   = 1_000_000_000    # Change to 100_000_000 for 10^8, etc.
 
 print(f"Verifying N = {START:,} to {END:,}")
 print(f"Progress (every 500,000 pairs):\n")
