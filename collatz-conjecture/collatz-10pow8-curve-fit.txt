@@ -1,0 +1,36 @@
+Parsed 200 data points
+N range: 500,000 to 100,000,000
+Density range: 0.470380 to 0.512423
+
+======================================================================
+Model                    R²         RMSE        AIC Params
+======================================================================
+Linear-log         0.996175   0.00043283   -3094.07  [0.37773, 0.01689]
+Log-log            0.999747   0.00011122   -3637.61  [0.25956, 0.28012]
+Power-log          FAILED: Optimal parameters not found: Number of calls to function has reached maxfev = 10000.
+Rational-log       0.999881   0.00007625   -3788.61  [0.66018, 2.30832]
+Exp-approach       0.999970   0.00003851   -4059.81  [0.59005, 0.34809, 0.82900]
+
+Best model by AIC: Exp-approach
+
+======================================================================
+Model               10^8  10^9  10^10  10^12  10^15  10^20
+======================================================================
+Linear-log           0.513   0.530   0.547   0.580   0.631   0.716
+Log-log              0.513   0.527   0.540   0.562   0.589   0.624
+Rational-log         0.512   0.525   0.536   0.554   0.572   0.592
+Exp-approach         0.512   0.526   0.537   0.553   0.569   0.582
+
+(!) = density exceeds 1.0, model breaks down there
+
+Plot saved to collatz_density_fit.png
+
+======================================================================
+Residual analysis — checking for systematic trend in best model
+======================================================================
+Best model: Exp-approach
+Max residual  : +0.00017630
+Min residual  : -0.00018569
+Mean residual : +0.00000000
+Std residual  : 0.00003851
+Sign runs     : 78 (high = random, low = systematic trend)
