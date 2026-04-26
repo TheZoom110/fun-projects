@@ -1,0 +1,71 @@
+Sanity checks (N: expected (s,r) → got (s,r)):
+  N=3: expected (2, 5) → got (2, 5) ✅
+  N=5: expected (1, 4) → got (1, 4) ✅
+  N=7: expected (5, 11) → got (5, 11) ✅
+  N=27: expected (41, 70) → got (41, 70) ✅
+
+All sanity checks passed. Engine is correct.
+Verifying N = 2 to 1,000,000
+Progress (adaptive intervals: 100/1K/10K/100K/500K by scale):
+
+  N=         100  |  same-T:       31  |  S1 violations: 0  |  S2 violations: 0  |  S3 violations: 0
+  N=         200  |  same-T:       67  |  S1 violations: 0  |  S2 violations: 0  |  S3 violations: 0
+  N=         300  |  same-T:      101  |  S1 violations: 0  |  S2 violations: 0  |  S3 violations: 0
+  N=         400  |  same-T:      140  |  S1 violations: 0  |  S2 violations: 0  |  S3 violations: 0
+  N=         500  |  same-T:      176  |  S1 violations: 0  |  S2 violations: 0  |  S3 violations: 0
+  N=         600  |  same-T:      215  |  S1 violations: 0  |  S2 violations: 0  |  S3 violations: 0
+  N=         700  |  same-T:      250  |  S1 violations: 0  |  S2 violations: 0  |  S3 violations: 0
+  N=         800  |  same-T:      286  |  S1 violations: 0  |  S2 violations: 0  |  S3 violations: 0
+  N=         900  |  same-T:      326  |  S1 violations: 0  |  S2 violations: 0  |  S3 violations: 0
+  N=       1,000  |  same-T:      365  |  S1 violations: 0  |  S2 violations: 0  |  S3 violations: 0
+  N=       2,000  |  same-T:      759  |  S1 violations: 0  |  S2 violations: 0  |  S3 violations: 0
+  N=       3,000  |  same-T:    1,164  |  S1 violations: 0  |  S2 violations: 0  |  S3 violations: 0
+  N=       4,000  |  same-T:    1,582  |  S1 violations: 0  |  S2 violations: 0  |  S3 violations: 0
+  N=       5,000  |  same-T:    2,007  |  S1 violations: 0  |  S2 violations: 0  |  S3 violations: 0
+  N=       6,000  |  same-T:    2,429  |  S1 violations: 0  |  S2 violations: 0  |  S3 violations: 0
+  N=       7,000  |  same-T:    2,861  |  S1 violations: 0  |  S2 violations: 0  |  S3 violations: 0
+  N=       8,000  |  same-T:    3,295  |  S1 violations: 0  |  S2 violations: 0  |  S3 violations: 0
+  N=       9,000  |  same-T:    3,729  |  S1 violations: 0  |  S2 violations: 0  |  S3 violations: 0
+  N=      10,000  |  same-T:    4,161  |  S1 violations: 0  |  S2 violations: 0  |  S3 violations: 0
+  N=      20,000  |  same-T:    8,520  |  S1 violations: 0  |  S2 violations: 0  |  S3 violations: 0
+  N=      30,000  |  same-T:   12,997  |  S1 violations: 0  |  S2 violations: 0  |  S3 violations: 0
+  N=      40,000  |  same-T:   17,486  |  S1 violations: 0  |  S2 violations: 0  |  S3 violations: 0
+  N=      50,000  |  same-T:   22,024  |  S1 violations: 0  |  S2 violations: 0  |  S3 violations: 0
+  N=      60,000  |  same-T:   26,631  |  S1 violations: 0  |  S2 violations: 0  |  S3 violations: 0
+  N=      70,000  |  same-T:   31,181  |  S1 violations: 0  |  S2 violations: 0  |  S3 violations: 0
+  N=      80,000  |  same-T:   35,799  |  S1 violations: 0  |  S2 violations: 0  |  S3 violations: 0
+  N=      90,000  |  same-T:   40,408  |  S1 violations: 0  |  S2 violations: 0  |  S3 violations: 0
+  N=     100,000  |  same-T:   45,022  |  S1 violations: 0  |  S2 violations: 0  |  S3 violations: 0
+  N=     200,000  |  same-T:   91,938  |  S1 violations: 0  |  S2 violations: 0  |  S3 violations: 0
+  N=     300,000  |  same-T:  139,472  |  S1 violations: 0  |  S2 violations: 0  |  S3 violations: 0
+  N=     400,000  |  same-T:  187,289  |  S1 violations: 0  |  S2 violations: 0  |  S3 violations: 0
+  N=     500,000  |  same-T:  235,189  |  S1 violations: 0  |  S2 violations: 0  |  S3 violations: 0
+  N=     600,000  |  same-T:  283,529  |  S1 violations: 0  |  S2 violations: 0  |  S3 violations: 0
+  N=     700,000  |  same-T:  331,709  |  S1 violations: 0  |  S2 violations: 0  |  S3 violations: 0
+  N=     800,000  |  same-T:  380,338  |  S1 violations: 0  |  S2 violations: 0  |  S3 violations: 0
+  N=     900,000  |  same-T:  428,880  |  S1 violations: 0  |  S2 violations: 0  |  S3 violations: 0
+  N=   1,000,000  |  same-T:  477,245  |  S1 violations: 0  |  S2 violations: 0  |  S3 violations: 0
+
+=================================================================
+  VERIFICATION REPORT: N = 2 to 1,000,000
+=================================================================
+
+  Consecutive pairs checked :      999,998
+  Pairs with T(N)=T(N+1)   :      477,245  (47.725%)
+  Pairs with s(N)=s(N+1)   :      477,245  (47.725%)
+  Pairs with r(N)=r(N+1)   :      477,245  (47.725%)
+  Pairs with all three equal:      477,245  (47.725%)
+
+  Statement 1 (same-T → same-s):
+    ✅ NO VIOLATIONS
+
+  Statement 2 (same-s → same-r):
+    ✅ NO VIOLATIONS
+
+  Statement 3 (same-r → same-s):
+    ✅ NO VIOLATIONS
+
+  Density of same-T pairs  : 0.477246  (~1 in 2.0)
+=================================================================
+
+  Total time: 10.8s  (92,386 N/sec)
