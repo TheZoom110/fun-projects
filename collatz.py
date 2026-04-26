@@ -121,7 +121,7 @@ def verify_statements(start, end, print_every=500_000):
 
         prev_s, prev_r = curr_s, curr_r
 
-        if counts["pairs_checked"] % print_every == 0:
+        if (n + 1) % print_every == 0:
             n_checked = counts["pairs_checked"]
             print(f"  N={n+1:>12,}  |  "
                   f"same-T: {counts['same_T']:>8,}  |  "
@@ -170,8 +170,8 @@ def print_report(counts, counterexamples, start, end):
 
 import time
 
-START = 1
-END   = 10_000_000    # Change to 100_000_000 for 10^8, etc.
+START = 2
+END   = 100_000_000    # Change to 100_000_000 for 10^8, etc.
 
 print(f"Verifying N = {START:,} to {END:,}")
 print(f"Progress (every 500,000 pairs):\n")
