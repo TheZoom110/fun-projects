@@ -36,7 +36,7 @@ def parse_output(text):
     return pairs
 
 
-with open('collatz-10pow9-finer-report-merged.csv', 'r') as f:
+with open('collatz-E3-E8-finer-report-merged.csv', 'r') as f:
     raw = f.read()
 
 data   = parse_output(raw)
@@ -168,7 +168,7 @@ ax.legend(fontsize=8)
 ax.grid(True, alpha=0.3)
 
 plt.tight_layout()
-plt.savefig('collatz-10pow9-finer-curve-fit.png', dpi=150, bbox_inches='tight')
+plt.savefig('collatz-E3-E8-finer-curve-fit.png', dpi=150, bbox_inches='tight')
 plt.show()
 print("\nPlot saved to collatz_density_fit.png")
 
