@@ -151,12 +151,13 @@ def verify_statements(start, end):
             streak_len   = 1
 
         if is_power_of_2(n + 1):
-            n_checked = counts["pairs_checked"]
-            print(f"  N={n+1:>12,}  |  "
-                  f"same-T: {counts['same_T']:>8,}  |  "
+            print(f"  N={n+1:>13,}  |  "
+                  f"same-T: {counts['same_T']:>13,}  |  "
                   f"S1 violations: {counts['s1_violations']}  |  "
                   f"S2 violations: {counts['s2_violations']}  |  "
                   f"S3 violations: {counts['s3_violations']}")
+        elif (n & 2_097_151) == 0:   # every 2^21 ≈ 2.1M iterations
+            print(f"  ... {n+1:>12,}", flush=True)
 
     # Flush the last streak
     record_streak(streak_len, streak_start)
@@ -211,7 +212,7 @@ def print_report(counts, counterexamples, streak_counts, start, end):
 import time
 
 START = 2
-END   = 1_048_576    # Change to 100_000_000 for 10^8, etc.
+END   = 1_073_741_824    # Change to 100_000_000 for 10^8, etc.
 
 print(f"Verifying N = {START:,} to {END:,}")
 print(f"Progress (reported at every power of 2):\n")
